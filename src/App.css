@@ -1,19 +1,61 @@
 .App {
-  padding: 1rem;
+    padding: 1rem;
+    display: grid;
+    align-items: center;
+    justify-content: center;
 }
 
 .emi__form {
-  display: flex;
-  flex-direction: column;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-width: 20rem;
+    max-width: 25rem;
+    box-shadow: 0 0 .5rem .25rem rgba(0, 0, 255, 0.2);
+    padding: 1rem;
+    border-radius: .25rem;
 }
 
 .emi__form__field {
-  display: flex;
-  flex-direction: column;
-  padding: .75rem 0.5rem;
+    display: flex;
+    flex-direction: column;
+    padding: 0.75rem 0;
+}
+
+.emi__form__field > label {
+    font-size: 0.9rem;
+    margin-bottom: 0.25rem;
+}
+
+.emi__form__field > input {
+    padding: 0.5rem 0.75rem;
+    border: 0.125rem solid whitesmoke;
+    outline: none;
+}
+
+.emi__form__field > input:focus {
+    border-bottom: 0.0125rem solid blue;
 }
 
 .emi__info > p > span {
-  font-weight: 800;
-  font-size: 1.5rem;
+    font-weight: 800;
+    font-size: 1.5rem;
+    color: blue;
+}
+
+.submit__btn {
+  padding: .5rem 0.75rem;
+  border-radius: .25rem;
+  color: blue;
+  border: .0125rem solid blue;
+  background: linear-gradient(to left, blue 50%, transparent 50%);
+  background-size: 200% 200%;
+  background-position: 0%;
+  transition: all .2s linear;
+}
+
+.submit__btn:hover {
+  color: white;
+  font-weight: 600;
+  background-position: 100%;
 }

@@ -113,7 +113,7 @@ function App() {
                         value={tenure}
                     />
                 </div>
-                <input name="formSubmit" type="submit" />
+                <input className="submit__btn" name="formSubmit" type="submit" />
             </form>
             {emi ? (
                 <div className="emi__info">
